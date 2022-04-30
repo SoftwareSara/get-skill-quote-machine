@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/saradeej/get-skill-quote-machine.git/static/css/main.2f98cc70.css",
-    "main.js": "/saradeej/get-skill-quote-machine.git/static/js/main.067f930a.js",
-    "static/js/787.9c2e55db.chunk.js": "/saradeej/get-skill-quote-machine.git/static/js/787.9c2e55db.chunk.js",
-    "index.html": "/saradeej/get-skill-quote-machine.git/index.html",
-    "main.2f98cc70.css.map": "/saradeej/get-skill-quote-machine.git/static/css/main.2f98cc70.css.map",
-    "main.067f930a.js.map": "/saradeej/get-skill-quote-machine.git/static/js/main.067f930a.js.map",
-    "787.9c2e55db.chunk.js.map": "/saradeej/get-skill-quote-machine.git/static/js/787.9c2e55db.chunk.js.map"
+    "main.css": "/get-skill-quote-machine/static/css/main.2f98cc70.css",
+    "main.js": "/get-skill-quote-machine/static/js/main.3fd5fdd2.js",
+    "static/js/787.9c2e55db.chunk.js": "/get-skill-quote-machine/static/js/787.9c2e55db.chunk.js",
+    "index.html": "/get-skill-quote-machine/index.html",
+    "main.2f98cc70.css.map": "/get-skill-quote-machine/static/css/main.2f98cc70.css.map",
+    "main.3fd5fdd2.js.map": "/get-skill-quote-machine/static/js/main.3fd5fdd2.js.map",
+    "787.9c2e55db.chunk.js.map": "/get-skill-quote-machine/static/js/787.9c2e55db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f98cc70.css",
-    "static/js/main.067f930a.js"
+    "static/js/main.3fd5fdd2.js"
   ]
 }
