@@ -11,34 +11,29 @@ let quoteDBUrl = "https://gist.githubusercontent.com/camperbot/5a022b72e96c4c958
 function App() {
   const [quote, setQuote] = useState("Life is 10% what happens to me and 90% how I react to it.")
   const [author, setAuthor]= useState("Charles Swindoll");
-  const[randomNumber, setRandomNumber]= useState(0);
-  const[quotesArray, setQuotesArray] = useState(null);
+  const [randomNumber, setRandomNumber]= useState(0);
+  const [quotesArray, setQuotesArray] = useState(null);
   const [accentColor, setAccentColor] = useState('#282c34'); 
 
   const fetchQuotes = async (url) => {
     const response = await fetch(url)
     const parsedJSON = await response.json()
     setQuotesArray(parsedJSON.quotes)
-    //
+    
     console.log(parsedJSON)
   }
   
 useEffect(() => {
   fetchQuotes(quoteDBUrl)
-}, [quoteDBUrl])
+}, [])
 
   const getRandomQuote = () => {
-    let randomInteger = Math.floor(quotesArray.length * Math.random())
-    setRandomNumber(randomInteger)
-    setAccentColor(COLORS_ARRAY[randomInteger])
-    setQuote(quotesArray[randomInteger].quote)
-    setAuthor(quotesArray[randomInteger].author)
+    let randomNumber = Math.floor(quotesArray.length * Math.random())
+    setRandomNumber(randomNumber)
+    setAccentColor(COLORS_ARRAY[randomNumber])
+    setQuote(quotesArray[randomNumber].quote)
+    setAuthor(quotesArray[randomNumber].author)
   }
-
- // const quotesArray = [{quote: "If life were predictable it would cease to be life, and be without flavor.", author: "Eleanor Roosevelt"},
-   //{quote: "The way to get started is to quit talking and begin doing", author:"Walt Disney"}, 
-   //{quote: "Life is 10% what happens to me and 90% how I react to it", author:"Charles Swindoll"}
-  //]
 
   return ( 
     <div className="App">
